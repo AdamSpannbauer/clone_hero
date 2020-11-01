@@ -1,5 +1,5 @@
 {
-  "name": "clone_hero",
+  "name": "tonks_leave_it",
   "version": "1.0.0",
   "description": "clone hero",
   "main": "sketch.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AdamSpannbauer/clone_hero"
+    "url": "git+https://github.com/AdamSpannbauer/tonks_leave_it"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AdamSpannbauer/clone_hero/issues"
+    "url": "https://github.com/AdamSpannbauer/tonks_leave_it/issues"
   },
-  "homepage": "https://github.com/AdamSpannbauer/clone_hero#readme",
+  "homepage": "https://github.com/AdamSpannbauer/tonks_leave_it#readme",
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-airbnb-base": "^14.2.0",
