@@ -1,7 +1,7 @@
 class LitterBox {
   constructor({ r = 80, img = null }) {
     this.x = width / 2;
-    this.y = width / 2;
+    this.y = height / 2;
     this.r = r;
     this.a = 0;
 

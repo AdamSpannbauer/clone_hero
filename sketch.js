@@ -39,7 +39,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
-  litterBox = new LitterBox({ r: width * 0.15, img: litterBoxIm });
+  litterBox = new LitterBox({ r: min([width, height]) * 0.15, img: litterBoxIm });
   clickLoc = createVector();
 }
 
@@ -61,7 +61,9 @@ function draw() {
   const releaseEveryN = round(map(nStopped, 0, 100, 60, 10, true));
   if (pooEaters.length < nPooEaters && frameCount % releaseEveryN === 0) {
     pooEaters.push(new PooEater({
-      speed: map(nStopped, 0, 100, 1, 10, true), r: width * 0.08, img: random(pooEaterIms),
+      speed: map(nStopped, 0, 100, 1, 10, true),
+      r: min([width, height]) * 0.08,
+      img: random(pooEaterIms),
     }));
   }
 
