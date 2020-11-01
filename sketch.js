@@ -20,6 +20,10 @@ function mouseClicked() {
   clickLoc.y = mouseY;
 }
 
+function touchStarted() {
+  mouseClicked();
+}
+
 let pooEaterIms;
 let litterBoxIm;
 const pooEaterImPaths = [
@@ -104,3 +108,4 @@ window.preload = preload;
 window.setup = setup;
 window.draw = draw;
 window.mouseClicked = mouseClicked;
+window.touchStarted = touchStarted;
