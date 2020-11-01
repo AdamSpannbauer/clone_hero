@@ -80,13 +80,10 @@ function draw() {
     x.draw();
     if (!x.dead && dist(litterBox.x, litterBox.y, x.p.x, x.p.y) > 10) {
       accum.push(x);
-    } else {
-      window.navigator.vibrate(50);
-      if (x.dead) {
-        nStopped += 1;
-      } else if (x.reachedLitterBox) {
-        nFailures += 1;
-      }
+    } else if (x.dead) {
+      nStopped += 1;
+    } else if (x.reachedLitterBox) {
+      nFailures += 1;
     }
     return accum;
   }, []);
