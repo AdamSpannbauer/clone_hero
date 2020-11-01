@@ -24,6 +24,7 @@ function touchStarted() {
   mouseClicked();
 }
 
+let leaveItSound;
 let pooEaterIms;
 let litterBoxIm;
 const pooEaterImPaths = [
@@ -38,6 +39,8 @@ const litterBoxImPath = 'imgs/litterBox.png';
 function preload() {
   pooEaterIms = pooEaterImPaths.map((x) => loadImage(x));
   litterBoxIm = loadImage(litterBoxImPath);
+
+  leaveItSound = loadSound('./leaveIt.wav');
 }
 
 function setup() {
@@ -82,6 +85,7 @@ function draw() {
       accum.push(x);
     } else if (x.dead) {
       nStopped += 1;
+      leaveItSound.play();
     } else if (x.reachedLitterBox) {
       nFailures += 1;
     }
