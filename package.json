@@ -1,0 +1,25 @@
+{
+  "name": "clone_hero",
+  "version": "1.0.0",
+  "description": "clone hero",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamSpannbauer/clone_hero"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdamSpannbauer/clone_hero/issues"
+  },
+  "homepage": "https://github.com/AdamSpannbauer/clone_hero#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-p5js": "^1.0.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
